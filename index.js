@@ -43,24 +43,32 @@ const projectList = {
       name: "Portfolio",
       description:
         "In this project you can find some of the latest projects I have built, along with some personal information and some of my skills. This project was build from scratch using html, scss, and vanilla JavaScript.",
+        link: "Visit website",
+        website: "https://milton-portfolio.netlify.app/",
     },
     {
       id: "password-manager-btn",
       name: "Password manager",
       description:
         "This project is a website in which the users can sign up and then they can store their passwords. The website can create passwords of 15 random characters. The passwords are save encrypted in the database. This project was build using python (Flask), scss, bootstrap, html, and vanilla JavaScript.",
+      link: "Visit website",
+      website: "https://pass-manager-16hl.onrender.com/",
     },
     {
       id: "message-sender-btn",
       name: "Message sender",
       description:
         "This project was developed using python and some libraries such as beautiful soup and selenium. Here when you run the code, it goes to Schoology, look for the people you want to send the message, write the message and send it.",
+      link: "See code",
+      website: "https://milton-portfolio.netlify.app/",
     },
     {
       id: "random-groups-btn",
       name: "Random groups",
       description:
         "This project was developed using python. At present it is in row code. The goal of the code is to create groups, taking into account the input of the user in which each person can choose four people they want to be with in the group and the code try to find groups in which each person is at least with one of the people the chose.",
+      link: "",
+      website: "",
     },
   ],
 };
@@ -74,6 +82,9 @@ function projectInfo(e) {
         projectList["projects"][i]["name"];
       document.getElementById("project-info-description").innerHTML =
         projectList["projects"][i]["description"];
+      document.getElementById("project-info-link").innerHTML =
+        projectList["projects"][i]["link"];
+      document.getElementById("project-info-link").setAttribute('href', projectList["projects"][i]["website"]);
     }
   }
 }

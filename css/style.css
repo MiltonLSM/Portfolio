@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
@@ -320,6 +321,10 @@ li {
     .about__cards--inner {
       width: 27rem;
       height: 40.5rem; }
+    .about__cards--info-text {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      letter-spacing: 0.02rem; }
     .about__card {
       width: 27rem;
       height: 40.5rem; } }
