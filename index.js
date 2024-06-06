@@ -59,8 +59,8 @@ const projectList = {
       name: "Message sender",
       description:
         "This project was developed using python and some libraries such as beautiful soup and selenium. Here when you run the code, it goes to Schoology, look for the people you want to send the message, write the message and send it.",
-      link: "See code",
-      website: "https://milton-portfolio.netlify.app/",
+      link: "",
+      website: "",
     },
     {
       id: "random-groups-btn",
@@ -112,3 +112,9 @@ function hideMenu() {
 document
   .querySelector(".header__menu-icon")
   .addEventListener("click", responsiveMenu);
+
+const responsiveListItems = document.querySelectorAll(".header__responsive-list-item");
+
+for (let i = 0; i < responsiveListItems.length; i++) {
+  responsiveListItems[i].addEventListener("click", hideMenu)
+}

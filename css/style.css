@@ -198,6 +198,9 @@ li {
       line-height: 2.3rem;
       letter-spacing: 0.03rem;
       text-align: center; }
+    .about__cards--link-list {
+      text-align: start;
+      list-style-type: disc; }
     .about__cards--list-item {
       margin: 0; }
     .about__cards--line {

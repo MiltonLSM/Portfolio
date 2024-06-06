@@ -299,6 +299,12 @@ li {
       text-align: center;
     }
 
+    &--link-list {
+      text-align: start;
+      // list-style-image: url(../img/plane-icon.png);
+      list-style-type: disc;
+    }
+
     &--list-item {
       margin: 0;
     }
